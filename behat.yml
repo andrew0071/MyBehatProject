@@ -1,0 +1,26 @@
+default:
+autoload:
+
+  '': %paths.base%/features/bootstrap
+  '': %paths.base%/features/bootstrap/Page
+  
+suites:
+  default:
+  contexts:
+    - FeatureContext
+paths:
+  - %paths.base%/features
+
+extensions:
+  Behat\symfony2-extension: ~
+  SensioLabs\Behat\PageObjectExtension:
+          namespaces:
+            page: [Features\Page]
+  Behat\MinkExtension:
+    browser_name: 'chrome'
+    goutte: ~
+    javascript_session: selenium2
+    selenium2:
+    wd_host: http://127.0.0.1:4444/wd/hub
+    capabilities: { "browser": "chrome", "version": "", 'chrome': {'switches':['--start-maximized']}}
+    base_url: https://axelerant.com/

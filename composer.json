@@ -1,0 +1,32 @@
+{
+
+	"require" : {
+	
+	  "behat/behat" : "3.0.*",
+	
+	  "behat/mink-goutte-driver" : "*",
+	
+	  "behat/mink-browserkit-driver" : "*",
+	
+	  "behat/mink-extension" : "2.*",
+	
+	  "behat/mink-selenium2-driver" : "*",
+	
+	  "behat/mink" : "*",
+		"behat/symfony2-extension": "^2.1"
+	
+	},
+	
+	
+	"require-dev" : {
+	
+	  "sensiolabs/behat-page-object-extension" : "2.0"
+	
+	},
+	"config": {
+
+		"bin-dir": "bin/"
+	  
+	  }
+	  
+	  }
